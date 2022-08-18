@@ -24,6 +24,8 @@ If you do this the markdown file will be parsed to HTML and placed INSIDE the ta
 ### Important note
 For this to work, you must execute this in a web server enviroment.  
 If not, you will have this error:  
-`Error 0: CORS error`  
+`Error 0: Protocol error`  
+or something similar, such as:  
+`Undefined error: An error has occurred`
 which means that there isn't any response
 
