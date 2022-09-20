@@ -13,7 +13,9 @@ npm install Showdown
 and then include this tag in the HTML
 ```html
 <script src="node_modules\showdown\dist\showdown.min.js">
-```  
+<script src="include-md.min.js">
+```
+ 
   
 After doing this, the HTML document must have a tag like this:
 ```html
@@ -21,11 +23,26 @@ After doing this, the HTML document must have a tag like this:
 ```
 If you do this the markdown file will be parsed to HTML and placed INSIDE the tag
 
+### ESM modules
+
+If you want to use ESM modules, the process will be pretty much the same. You have only to change some things
+First the script tag for calling the library:
+```html
+<script src="index.js" type="module">
+```
+`index.js` being the js file where you import your modules.  
+Inside the `index.js` you write:
+```javascript
+import includeMD from "./include-md.esm.min.js"
+inlcudeMD()
+```
+
+
 ### Important note
 For this to work, you must execute this in a web server enviroment.  
 If not, you will have this error:  
 `Error 0: Protocol error`  
 or something similar, such as:  
-`Undefined error: An error has occurred`
+`Undefined error: An error has occurred`  
 which means that there isn't any response
 
