@@ -28,8 +28,10 @@ If you do this the markdown file will be parsed to HTML and placed INSIDE the ta
 If you want to use ESM modules, the process will be pretty much the same. You have only to change some things
 First the script tag for calling the library:
 ```html
+<script src="node_modules\showdown\dist\showdown.min.js">
 <script src="index.js" type="module">
 ```
+You will have to import in a script before the node for showdown, otherwise the library won't work
 `index.js` being the js file where you import your modules.  
 Inside the `index.js` you write:
 ```javascript
