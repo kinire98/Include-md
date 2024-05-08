@@ -1,5 +1,5 @@
 # Include-md
-**Disclaimer: When I did this, I have no idea what I was doing, so the docs are wrong. Not going to change them. I want to rembember myself how I improved**
+**Disclaimer: When I did this, I have no idea what I was doing, so the docs are wrong. Not going to change them. I want to rembember myself how I improved**  
 Include-md is a really simple JavaScript library perfect for writing blogs in MarkDown
 ## How to use it
 Inlude the `include-md.min.js` JavaScript file at the end of the `<body>` of your document  
