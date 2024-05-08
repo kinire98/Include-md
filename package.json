@@ -1,0 +1,29 @@
+{
+  "name": "include-md",
+  "version": "1.0.1",
+  "description": "A JavaScript library for inserting MarkDown in your HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinire98/Include-md.git"
+  },
+  "keywords": [
+    "md",
+    "Markdown",
+    "Blog",
+    "HTML",
+    "html"
+  ],
+  "author": "kinire98",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinire98/Include-md/issues"
+  },
+  "homepage": "https://github.com/kinire98/Include-md#readme",
+  "dependencies": {
+    "showdown": "^2.1.0"
+  }
+}

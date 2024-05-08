@@ -1,42 +1,18 @@
 # Include-md
 **Disclaimer: When I did this, I have no idea what I was doing, so the docs are wrong. Not going to change them. I want to rembember myself how I improved**  
 Include-md is a really simple JavaScript library perfect for writing blogs in MarkDown
+I don't know if this is possible as it uses a node modules and tries to edit the DOM
 ## How to use it
-Inlude the `include-md.min.js` JavaScript file at the end of the `<body>` of your document  
-The line before that you must invoke Showdown.js with:
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
-```
-or
+To install it, run:
 ```bash
-npm install Showdown
+npm install include-md
 ```
-and then include this tag in the HTML
+Then in your js file add the call to the function:
+```js
+includeMD();
+```
+And then all the HTML tags with the `data-md` attribute will have the content with parsed to HTML of the Markdown file you pass as a value of the attribute:
 ```html
-<script src="node_modules\showdown\dist\showdown.min.js"></script>
-<script src="include-md.min.js"></script>
+<random-tag data-md="path/to/markdown.md"></random-tag>
 ```
- 
-  
-After doing this, the HTML document must have a tag like this:
-```html
-<random-tag data-md="markdownFile.md"></random-tag>
-```
-If you do this the markdown file will be parsed to HTML and placed INSIDE the tag
-
-### ESM modules
-
-If you want to use ESM modules, the process will be pretty much the same. You have only to change some things
-First the script tag for calling the library:
-```html
-<script src="node_modules\showdown\dist\showdown.min.js"></script>
-<script src="index.js" type="module"></script>
-```
-You will have to import in a script before the node for showdown, otherwise the library won't work
-`index.js` being the js file where you import your modules.  
-Inside the `index.js` you write:
-```javascript
-import includeMD from "./include-md.esm.min.js"
-inlcudeMD()
-```
-
+And you should be good to go.
