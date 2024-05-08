@@ -1,7 +1,6 @@
 # Include-md
-**Disclaimer: When I did this, I have no idea what I was doing, so the docs are wrong. Not going to change them. I want to rembember myself how I improved**  
 Include-md is a really simple JavaScript library perfect for writing blogs in MarkDown
-I don't know if this is possible as it uses a node modules and tries to edit the DOM
+I don't know if this is possible as it uses a node modules and tries to edit the DOM. Had this idea long ago, and I just wanted to refactor it as an npm package.
 ## How to use it
 To install it, run:
 ```bash
